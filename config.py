@@ -1,0 +1,1 @@
+BOOK_COST_PER_DAY = 1

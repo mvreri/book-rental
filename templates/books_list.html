@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border = 1>
+         <thead>
+            <td>id</td>
+            <td>Name</td>
+            <td>ISBN</td>
+            <td></td>
+         </thead>
+
+         {% for id,bookname,isbn in thebooks %}
+            <tr>
+               <td>{{ id }}</td>
+               <td>{{ bookname }}</td>
+               <td> {{ isbn }}</td>
+                <td> <button value="Borrow" type="button"></button></td>
+            </tr>
+         {% endfor %}
+      </table>
+</body>
+</html>
